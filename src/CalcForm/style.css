@@ -1,0 +1,55 @@
+.calcForm {
+    max-width: 530px;
+    min-height: 400px;
+    width: 95%;
+    margin: 30px auto;
+    padding: 40px 10px 20px 10px;
+    text-align: center;
+    border: 8px solid hsl(34, 100%, 15%);
+    border-radius: 30px;
+    box-shadow: 0 0 30px hsl(34, 100%, 15%);
+}
+
+.calcForm__value {
+    margin: 2px;
+    border-radius: 8px;
+    border: 4px solid hsl(34, 43%, 37%);
+    text-align: center;
+    height: 50px;
+    padding: 6px 10px;
+}
+
+.calcForm__value--amount {
+    width: 300px;
+}
+
+.calcForm__value--type {
+    width: 100px;
+}
+
+.calcForm__button {
+    display: block;
+    border: none;
+    padding: 5px;
+    margin-left: 77%;
+    outline: none;
+    background: none;
+    background-image: url(../images/switchgreen.jpg);
+    background-repeat: round;
+    width: 30px;
+    height: calc(1.53*30px);
+}
+
+.calcForm__button:hover {
+    background-image: url(../images/switchyellow.jpg);
+}
+
+.calcForm__button:active {
+    background-image: url(../images/switchred.jpg);
+}
+
+.calcForm__textResult {
+    margin-top: 30px;
+    font-size: 120%;
+    color: hsl(34, 100%, 10%);
+}
