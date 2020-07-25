@@ -1,0 +1,10 @@
+.header {
+    font-size: 34px;
+    font-weight: bold;
+    max-width: 700px;
+    width: 95%;
+    margin: auto;
+    padding: 70px 10px 20px 10px;
+    text-align: center;
+    color: hsl(34, 100%, 15%);
+}
