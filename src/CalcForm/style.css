@@ -36,8 +36,9 @@
     background: none;
     background-image: url(../images/switchgreen.jpg);
     background-repeat: round;
-    width: 30px;
-    height: calc(1.53*30px);
+    --buttonWidth: 30px;
+    width: var(--buttonWidth);
+    height: calc(1.53*var(--buttonWidth));
 }
 
 .calcForm__button:hover {
