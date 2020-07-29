@@ -3,11 +3,20 @@
     min-height: 400px;
     width: 95%;
     margin: 30px auto;
-    padding: 40px 10px 20px 10px;
     text-align: center;
     border: 8px solid hsl(34, 100%, 15%);
     border-radius: 30px;
     box-shadow: 0 0 30px hsl(34, 100%, 15%);
+}
+
+.calcForm__form {
+    display: grid;
+    grid-template-areas: "a1 t1" "em bt" "a2 t2";
+    grid-template-columns: 1fr auto;
+    grid-gap: 5px;
+    justify-items: center;
+    align-content: flex-start;
+    padding: 50px 20px;
 }
 
 .calcForm__value {
@@ -19,19 +28,35 @@
     padding: 6px 10px;
 }
 
-.calcForm__value--amount {
-    width: 300px;
+.calcForm__value--amount {}
+
+.calcForm__value--amount1 {
+    grid-area: a1;
+}
+
+.calcForm__value--amount2 {
+    grid-area: a2;
 }
 
 .calcForm__value--type {
-    width: 100px;
+    width: 110px;
+}
+
+.calcForm__value--type1 {
+    grid-area: t1;
+}
+
+.calcForm__value--type2 {
+    grid-area: t2;
+}
+
+.empty {
+    grid-area: em;
 }
 
 .calcForm__button {
-    display: block;
     border: none;
     padding: 5px;
-    margin-left: 77%;
     outline: none;
     background: none;
     background-image: url(../images/switchgreen.jpg);
@@ -39,6 +64,7 @@
     --buttonWidth: 30px;
     width: var(--buttonWidth);
     height: calc(1.53*var(--buttonWidth));
+    grid-area: bt;
 }
 
 .calcForm__button:hover {
