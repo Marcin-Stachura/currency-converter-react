@@ -2,41 +2,50 @@ import React from "react";
 import "./style.css";
 
 const CalcForm = () => (
-    <form className="calcForm">
-        <label>
-            <input
-                className="calcForm__value calcForm__value--amount"
-                name="valueAmount1" />
-        </label>
-        <select
-            className="calcForm__value calcForm__value--type"
-            name="valueType1">
-            <option>PLN</option>
-            <option>EUR</option>
-            <option>USD</option>
-        </select>
+    <>
+        <div className="calcForm">
+            <form className="calcForm__form">
+                <label>
+                    <input
+                        className="calcForm__value calcForm__value--amount calcForm__value--amount1"
+                        name="valueAmount1"
+                    />
+                </label>
+                <select
+                    className="calcForm__value calcForm__value--type calcForm__value--type1"
+                    name="valueType1">
+                    <option>PLN</option>
+                    <option>EUR</option>
+                    <option>USD</option>
+                </select>
 
-        <button
-            type="button"
-            className="calcForm__button"
-        ></button>
+                <p className="empty"></p>
 
-        <label>
-            <input
-                className="calcForm__value calcForm__value--amount"
-                name="valueAmount2"
-                readOnly />
-        </label>
-        <select
-            className="calcForm__value calcForm__value--type"
-            name="valueType2">
-            <option>PLN</option>
-            <option>EUR</option>
-            <option>USD</option>
-        </select>
+                <button
+                    type="button"
+                    className="calcForm__button"
+                ></button>
 
-        <div className="calcForm__textResult"></div>
-    </form>
+                <label>
+                    <input
+                        className="calcForm__value calcForm__value--amount calcForm__value--amount2"
+                        name="valueAmount2"
+                        readOnly
+                    />
+                </label>
+                <select
+                    className="calcForm__value calcForm__value--type calcForm__value--type2"
+                    name="valueType2">
+                    <option>PLN</option>
+                    <option>EUR</option>
+                    <option>USD</option>
+                </select>
+
+            </form>
+
+            <div className="calcForm__textResult"></div>
+        </div>
+    </>
 );
 
 export default CalcForm;
