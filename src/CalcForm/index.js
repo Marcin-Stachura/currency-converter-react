@@ -5,12 +5,10 @@ const CalcForm = () => (
     <>
         <div className="calcForm">
             <form className="calcForm__form">
-                <label>
                     <input
                         className="calcForm__value calcForm__value--amount calcForm__value--amount1"
                         name="valueAmount1"
                     />
-                </label>
                 <select
                     className="calcForm__value calcForm__value--type calcForm__value--type1"
                     name="valueType1">
@@ -26,13 +24,11 @@ const CalcForm = () => (
                     className="calcForm__button"
                 ></button>
 
-                <label>
                     <input
                         className="calcForm__value calcForm__value--amount calcForm__value--amount2"
                         name="valueAmount2"
                         readOnly
                     />
-                </label>
                 <select
                     className="calcForm__value calcForm__value--type calcForm__value--type2"
                     name="valueType2">

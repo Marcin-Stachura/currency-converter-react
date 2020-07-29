@@ -13,10 +13,10 @@
     display: grid;
     grid-template-areas: "a1 t1" "em bt" "a2 t2";
     grid-template-columns: 1fr auto;
-    grid-gap: 5px;
+    grid-gap: 5px 30px;
     justify-items: center;
     align-content: flex-start;
-    padding: 50px 20px;
+    padding: 50px 30px;
 }
 
 .calcForm__value {
@@ -28,7 +28,10 @@
     padding: 6px 10px;
 }
 
-.calcForm__value--amount {}
+.calcForm__value--amount {
+    width: 100%;
+    min-width: 250px;
+}
 
 .calcForm__value--amount1 {
     grid-area: a1;
